@@ -1,14 +1,19 @@
+// ****** QUESTION ******
+// where does dispatch come from ?
+// for example, run me through the login action
+
 import axios from 'axios';
 const ROOT_URL = 'http://localhost:3000';
 
 axios.defaults.withCredentials = true;
+// this is a list of all (defined) possible Action Types
+export const USER_REGISTERED = 'USER_REGISTERED'; // register action
+export const USER_AUTHENTICATED = 'USER_AUTHENTICATED'; // login action
+export const USER_UNAUTHENTICATED = 'USER_UNAUTHENTICATED'; // logout action
+export const GET_USERS = 'GET_USERS'; // getUsers action: available upon successful login 
 
-export const USER_REGISTERED = 'USER_REGISTERED';
-export const USER_AUTHENTICATED = 'USER_AUTHENTICATED';
-export const USER_UNAUTHENTICATED = 'USER_UNAUTHENTICATED';
-export const AUTHENTICATION_ERROR = 'AUTHENTICATION_ERROR';
-export const GET_USERS = 'GET_USERS';
-export const CHECK_IF_AUTHENTICATED = 'CHECK_IF_AUTHENTICATED';
+export const AUTHENTICATION_ERROR = 'AUTHENTICATION_ERROR'; // authentication error: used in register, login, logout, get users
+export const CHECK_IF_AUTHENTICATED = 'CHECK_IF_AUTHENTICATED'; // checkIfAuthenticated
 
 export const authError = (error) => {
   return {
