@@ -13,6 +13,7 @@ export default (ComposedComponent) => {
                 // window.location = '/signin';
                 // this.props.history.replace('/signin'); // <~~~ preference
                 this.props.history.push('/signin');
+
             };
         }
 
