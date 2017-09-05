@@ -11,6 +11,7 @@ export default (ComposedComponent) => {
             // If it isn't, then redirect the user back to the /signin page
             if (!this.props.authenticated) {
                 // window.location = '/signin';
+                // this.props.history.replace('/signin'); // <~~~ preference
                 this.props.history.push('/signin');
             };
         }
