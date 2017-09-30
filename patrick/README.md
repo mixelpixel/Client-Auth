@@ -1,6 +1,6 @@
 # LS-Client-Auth
 
-## Assignment
+## Assignment - OKAY √
 - Start your MongoDB server by running `mongod` from the command line. - DONE √
   - copied Client Auth Mini into "patrick" subfolder
   - `mongo --dbpath data` from /patrick/Client-Auth-Mini/
